@@ -1,0 +1,57 @@
+<script type="text/javascript">
+// Swiftype search
+(function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+(w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+})(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+_st('install','C_y_U9xx-99SLTfDHYmM','2.0.0');
+</script>
+
+<div class="header">
+	<div class="number footer-left">555-1234</div>
+	<div class="action footer-right"><a href="schedule.php"><button class="btn btn-primary">Schedule an Appointment!</button></a></div>
+</div>
+<header>
+<h1>The Pallas Institute</h1>
+</header>
+
+<nav id="topnav" class="single-nav menu" role="navigation" >
+	<ul>
+		<li><a href="#" id="searchtoggl"><i class="fa fa-search fa-lg"></i></a></li>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="prosthetics.html">Prosthetics</a></li>
+		<li><a href="physicaltherapy.html">Physical Therapy</a></li>
+		<li><a href="aboutus.html">About Us</a></li>
+	</ul>
+</nav>
+
+<div  id="searchbar">
+<input type="text" style="box-sizing: border-box;width: 100%;height: 30px;" class="st-default-search-input">
+</div>
+
+<script type="text/javascript">
+// Toggle Search field
+
+$(function(){
+  var $searchlink = $('#searchtoggl i');
+  var $searchbar  = $('#searchbar');
+  
+  $('#topnav ul li a').on('click', function(e){
+    
+    if($(this).attr('id') == 'searchtoggl') {
+      if(!$searchbar.is(":visible")) { 
+        // if invisible we switch the icon to appear collapsable
+        $searchlink.removeClass('fa-search').addClass('fa-search-minus');
+      } else {
+        // if visible we switch the icon to appear as a toggle
+        $searchlink.removeClass('fa-search-minus').addClass('fa-search');
+      }
+      
+      $searchbar.slideToggle(300, function(){
+        // callback after search bar animation
+      });
+    }
+  });
+});
+ </script>

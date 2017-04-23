@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!--
+Name: Erik Brown
+Current Date: 2016
+Language: HTML5
+Libraries: Bootstrap JQuery
+Includes: master.css 
+-->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Pallas Institute</title>
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAneifadSIq3pbaB4rndWkfnln0R033Bi0&sensor=false"></script>
+<script type="text/javascript">
+// Google Maps API
+function initialize() {
+    var mapOptions = {
+        zoom: 17,
+        center: new google.maps.LatLng(29.649593,-82.343707),
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+     };
+ 
+     var map = new google.maps.Map(document.getElementById('location-canvas'),
+mapOptions);
+ 
+    var marker = new google.maps.Marker({
+        map: map,
+        draggable: false,
+        position: new google.maps.LatLng(29.649593,-82.343707)
+    });
+}
+ 
+google.maps.event.addDomListener(window, 'resize', initialize);
+google.maps.event.addDomListener(window, 'load', initialize)
+</script>
+<link href="css/master.css" rel="stylesheet" type="text/css"  />
+</head>
+<body>
+
+<div id="header"></div>
+
+<article id="container">
+<h2>About Us</h2>
+
+<p>Our mission is to discover, develop, and commercialize technologies to improve the lives of those who have lost limbs in service to our country.</p>
+
+	<div class="row">
+		<li class="thumbnail col-sm-6 col-xs-12">
+			<a href="#kamran" data-toggle="modal"><img src="images/kamrannew.jpg" class="outline" alt="Dr. Kamran Khan, Chief Operating Officer" /></a>
+			<div class="caption">
+				<h3>Dr. Kamran Khan</h3>
+				<p>Chief Operating Officer</p>
+			</div>
+		</li>
+		<li class="thumbnail col-sm-6 col-xs-12">
+			<a href="#mikaila" data-toggle="modal"><img src="images/mikaila.jpg" class="outline" alt="Dr. Mikaila Tran, Chief Executive Officer" /></a>
+			<div class="caption">
+				<h3>Dr. Mikaila Tran</h3>
+				<p>Chief Executive Officer</p>
+			</div>
+		</li>
+	</div>
+
+<!-- Modal Windows -->
+<div id="kamran" class="modal fade" tabindex="-1">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+				<h3 class=modal-title>Dr. Kamran Khan</h3>
+			</div>
+			<div class="modal-body">
+				<p><img src="images/kamrannew.jpg" alt="Dr. Kamran Khan" class="img-responsive" />
+				Dr. Kamran Khan graduated from John Hopkins University with an M.D. and a specialty in prosthetic surgery.  After working as a prosthetic surgeon at Massachusetts General Hospital he came on board with The Pallas Institute where he is our Chief Operating Officer, overseeing not only the surgical practice but also the Research and Development that goes on in order to bring cutting edge prosthesis to market. </p>
+			</div>
+			<div class="modal-footer">
+				<button class="btn btn-primary" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="mikaila" class="modal fade" tabindex="-1">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+				<h3 class=modal-title>Dr. Mikaila Tran</h3>
+			</div>
+			<div class="modal-body">
+				<p><img src="images/mikaila.jpg" alt="Dr. Mikaila Tran" class="img-responsive" />
+				Dr. Mikaila Tran graduated from Stanford University with an M.D. and a speciality in Amputee Therapy.  She worked as a therapist with the Mayo Clinic for many years, and joined The Pallas Institute as our Chief Executive Officer, where she oversees the financial and executive decisions of the practice, as well as the physical therapy program.  </p>
+			</div>
+			<div class="modal-footer">
+				<button class="btn btn-primary" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<h2>Contact Us</h2>
+
+<p>Phone Number: 555-1234<br />
+Email: contact@pallasinstitute.com<br />
+Address: 1234 NSEW 1234th ST<br />
+Someplace,Somestate 123456 USA</p>
+
+
+<div id='location-canvas' style='width:100%;height:50vh;'></div>
+<a href="https://maps.google.com/?saddr=My%20Location&daddr=29.649593,-82.343707"><p>Get Directions</a></p>
+
+</article>
+	
+<div id="footer"></div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+// Load the header and footer
+$(function(){
+  $("#header").load("header.html"); 
+  $("#footer").load("footer.html"); 
+});
+</script>
+
+
+</body>
+</html>

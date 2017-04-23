@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!--
+Name: Erik Brown
+Current Date: 2016
+Language: HTML5
+Libraries: Bootstrap JQuery
+Includes: master.css 
+-->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Pallas Institute</title>
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+<link href="css/master.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<div id="header"></div>
+
+<article id="container">
+
+<h2>Physical Therapy</h2>
+
+<img src="images/herotherapy.jpg" class="img-responsive" height="50%" width="50%" alt="A man with a leg prosthetic runs a cone touching drill with his therapist" />
+<p class="therapy">Here at Pallas Institute we believe an extensive physical therapy program administered by our knowledgeable, caring staff are the keys to a successful recovery. Each program is designed to target your specific mobility needs and provide comfort in helping you return to a more productive and active lifestyle. </p>
+
+<img src="images/walktherapy.jpg" class="img-responsive" height="25%" width="25%" alt="A man with a leg prosthetic walks on a treadmill while his therapist watches" />
+<p class="therapy">Our staff of board certified doctors and physical therapists are dedicated to the full recovery of every patient. From the first visit, to the adjustments and maintenance of each prosthetic device for years to come. Initial consultations are free for all our wounded Military, Police, and Firefighters. We work with a wide range of insurance providers and there is with additional funding available for therapy sessions and prosthetic devices. Flexible appointments are available to fit a wide range of schedules.</p>
+
+
+
+<img src="images/touch.jpg" class="img-responsive" height="50%" width="50%" alt="A human hand touches a prosthetic hand" />
+
+<p>At Pallas Institute we strive to touch one life at a time.</p>
+</div>
+</article>
+
+<div id="footer"></div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+// Load the header and footer
+$(function(){
+  $("#header").load("header.html"); 
+  $("#footer").load("footer.html"); 
+});
+</script>
+
+</body>
+</html>

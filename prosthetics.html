@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!--
+Name: Erik Brown
+Current Date: 2016
+Language: HTML5
+Libraries: Bootstrap JQuery
+Includes: master.css 
+-->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Pallas Institute</title>
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+<link href="css/master.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<div id="header"></div>
+
+<article id="container">
+<h2>Prosthetics</h2>
+
+<div class="row">
+	<div class="col-sm-6 col-xs-12">
+		<img class="img-responsive" src="images/prostheticarm.jpg" />
+		<div class="caption">
+			<p>Developed right here at the Pallas Institute, this replacement is perfect for procedures requiring an above the elbow replacement.  It is strong and durable, yet nimble enough to grasp objects without breaking them.</p>
+		</div>
+	</div>
+	<div class="col-sm-6 col-xs-12">
+		<img class="img-responsive" src="images/extendedarm.jpg" />
+		<div class="caption">
+			<p>This model comes in both above and below the elbow versions and is also available in right and left handed versions, it is especially tuned to handle more delicate objects.</p>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-sm-6 col-xs-12">
+		<img class="img-responsive" src="images/sportsprosthesis.jpg" />
+		<div class="caption">
+			<p>This model is designed for above the knee replacements.  Although it also has a shoe attachment it is specifically designed to support the running attachment pictured.  The knee is highly responsive and especially comfortable when on the move.</p>
+		</div>
+	</div>
+	<div class="col-sm-6 col-xs-12">
+		<img class="img-responsive" src="images/walkprosthesis.jpg" />
+		<div class="caption">
+			<p>This model is also intended for above the knee replacements.  The artificial knee can detect when to bend and is highly responsive, although it is intender for slower speeds.  This model is very durable, the attachment pictured here can support both walking and slower running speeds, and can also be swapped with an attachment that supports a shoe.</p>
+		</div>
+	</div>
+</div>
+
+</article>
+
+<div id="footer"></div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+// Load the header and footer
+$(function(){
+  $("#header").load("header.html"); 
+  $("#footer").load("footer.html"); 
+});
+</script>
+
+</body>
+</html>
